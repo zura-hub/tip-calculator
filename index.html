@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+<div class="main-cont">
+  <div class="cont">
+    <div class="header-text">
+      <h1 class="header">SPLI<br>TTER</h1>
+    </div>
+  </div>
+
+  <!-- bill -->
+
+  <div class="bill-content">
+    <div class="cont">
+      <h1 class="bill">Bill</h1>
+    </div>
+
+    <form class="form-container" action="">
+      <input class="amount-input" type="text" placeholder="$">
+    </form>
+
+    <!-- tip % -->
+    <h1 class="tip-text">Select Tip %</h1>
+
+    <form action="">
+      <div class="tip-pro">
+        <input class="tips" onclick="tip(this)" id="five" value="5">
+        <input class="tips" onclick="tip(this)" id="ten" value="10">
+        <input class="tips" onclick="tip(this)" id="green" value="15">
+        <input class="tips" onclick="tip(this)" id="tenty" value="25">
+        <input class="tips" onclick="tip(this)" id="fift" value="50">
+        <input class="tips" id="gray" class="tip-box" value="CUSTOM">
+      </div>
+    </form>
+
+
+    <!-- total -->
+
+    <h1 class="people">Number of People</h1>
+
+    <form action="">
+      <input type="text" class="human-cuant">
+    </form>
+
+    <div class="last-green-cont">
+      <div class="trip-human">
+        <p class="tip-person">Tip Amount <br> <span class="green-span">/person</span></p>
+
+        <input type="text" name="" id="amount">
+      </div>
+
+      <div class="trip-human-total">
+        <p class="tip-person">Tip Amount <br> <span class="green-span">/person</span></p>
+
+        <input type="text" name="" id="total-amount">
+      </div>
+
+
+      <input onclick="reset()" type="reset" class="reset" value="reset">
+    </div>
+  </div>
+</div>
+
+  <!-- script -->
+
+  <script src="js.js"></script>
+</body>
+
+</html>
