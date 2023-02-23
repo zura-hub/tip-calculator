@@ -37,8 +37,9 @@ function tip(el){
     
 
     function total(){
+       let emount = document.querySelector('.amount-input')
 
-        totalRes = res * percCuantity.value;
+        totalRes = (res * percCuantity.value )+ parseInt(emount.value) ;
 
         document.getElementById('total-amount').value = totalRes;
     }
@@ -58,4 +59,11 @@ function reset(){
     location.reload()
 }
 
+function activeBill(){
+  let bill = document.querySelector('.bill');
+
+  bill.style.cursor = 'pointer'
+}
+
+activeBill();
 
