@@ -1,4 +1,22 @@
 function tip(el){
+
+    const colorEl = document.querySelectorAll(".tips");
+    let lastClickedElem = null;
+    
+    for (let i = 0; i < colorEl.length; i++) {
+      colorEl[i].addEventListener("click", function() {
+        if (lastClickedElem) {
+          lastClickedElem.style.backgroundColor = "#00494d";
+        }
+        this.style.backgroundColor = "#039e6f";
+        lastClickedElem = this;
+      });
+    }
+
+
+    
+    console.log(el.style)
+
     const number = document.querySelector('.amount-input');
 
     const percCuantity = document.querySelector('.human-cuant');
@@ -11,7 +29,6 @@ function tip(el){
         res = number.value * el.value / 100;
 
         document.getElementById('amount').value = res;
-
        
     }
 
@@ -28,6 +45,8 @@ function tip(el){
 
   
     total()
+
+     
     
 }
 
@@ -36,5 +55,7 @@ function tip(el){
 function reset(){
     document.getElementById('total-amount').value = ' '
     document.getElementById('amount').value = ' '
+    location.reload()
 }
+
 

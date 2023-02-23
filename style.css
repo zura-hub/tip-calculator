@@ -60,11 +60,16 @@ body {
     line-height: 24px;
     color: #5E7A7D;
 }
+ 
+.tips{
+    user-select: none;
+}
 
 .tip-pro {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+    user-select: none;
 }
 
 .tip-pro input {
@@ -83,10 +88,6 @@ body {
     font-size: 16px;
     line-height: 24px;
     cursor: pointer;
-}
-
-#green {
-    background: #26C2AE;
 }
 
 #gray {
@@ -124,7 +125,11 @@ body {
     left: 24px;
     top: 644px;
     border-radius: 15px;
-    background: #00474B;
+    background: #00494d;
+}
+
+.tips{
+    user-select: none;
 }
 
 .tip-person {
@@ -199,3 +204,4 @@ body {
         margin: auto;
     }
 }
+
